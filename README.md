@@ -1,111 +1,56 @@
-🎬 Group Recommender Systems Project (MovieLens 100K)
-Advanced implementation of user‑based collaborative filtering, group recommendation strategies, sequential recommendation models, diversification techniques, and counterfactual explanations using the MovieLens 100K dataset.
-This project was completed as part of coursework at Tampere University and demonstrates end‑to‑end recommender‑system engineering.
+# Group Recommender Systems
 
-⭐ Project Overview
-This repository contains four major components, each building on the previous one.
+## Overview
 
-1. User‑Based Collaborative Filtering
-Loaded and explored the MovieLens 100K dataset
+This project implements and extends recommendation techniques as part of the Recommender Systems course at Tampere University, using the MovieLens 100K dataset (https://grouplens.org/datasets/movielens/).
 
-Implemented Pearson correlation for user similarity
+The work is divided into four parts:
 
-Implemented rating prediction using neighborhood‑based CF
+- **Part 1** – User-Based Collaborative Filtering and Group Recommendations
+- **Part 2** – Sequential Group Recommendations
+- **Part 3** – Diverse Sequential Group Recommendations
+- **Part 4** – Counterfactual Explanations for Group Recommendations
 
-Designed a custom similarity function and justified its usefulness
+The goal is to investigate how recommendation algorithms can be adapted from individual users to groups while considering fairness, disagreement, diversity, sequence awareness, and explainability.
 
-Generated group recommendations using:
+---
 
-Average aggregation
+## Project Structure
 
-Least misery aggregation
-
-Proposed and implemented a disagreement‑aware group recommendation method
-
-2. Sequential Group Recommendations
-Designed and implemented a new sequential recommendation method inspired by:
-
-Transition‑based modeling
-
-Temporal preference patterns
-
-Sequence‑aware group aggregation
-
-Includes a short slide deck explaining the method and design choices.
-
-3. Diverse Sequential Group Recommendations
-Implemented a diversity‑enhancing strategy to avoid:
-
-Repetitive recommendations
-
-Popularity reinforcement
-
-Narrow preference loops
-
-Techniques used:
-
-Intra‑list diversity
-
-Coverage‑based diversification
-
-Sequence‑aware novelty scoring
-
-4. Counterfactual Explanations for Groups
-Designed and implemented a counterfactual explanation generator that:
-
-Removes selected items from user histories
-
-Recomputes recommendations
-
-Identifies minimal sets of items that change group suggestions
-
-Ensures fairness by avoiding explanations based on a single user’s history
-
-Includes a slide deck demonstrating the method.
-
-🛠️ Tech Stack
-Python
-
-NumPy, Pandas, SciPy
-
-Jupyter Notebooks
-
-MovieLens 100K dataset
-
-Custom implementations (no external recommender libraries)
-
-📂 Repository Structure
-Code
-├── part1_user_cf/
-├── part2_sequential/
-├── part3_diversity/
-├── part4_counterfactuals/
-├── slides/
+```text
+project/
+│
+├── data/
+│   └── ratings.csv
+│
+├── src/
+│   ├── part_1.ipynb
+│   ├── part_2.ipynb
+│   ├── part_3.ipynb
+│   └── part_4.ipynb
+│
+├── presentations/
+│   ├── Part_1.ppt
+│   ├── Part_2.ppt
+│   ├── Part_3.ppt
+│   └── Part_4.ppt
+│
 └── README.md
-🎯 Key Skills Demonstrated
-Recommender system design
+```
 
-Similarity metrics & prediction functions
+---
 
-Group preference aggregation
+## Technologies
 
-Sequential modeling
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
 
-Diversity optimization
+---
 
-Counterfactual reasoning
+## Authors
 
-Clean code & reproducible experiments
-
-🚀 How to Run
-Each part contains:
-
-A Jupyter notebook with explanations
-
-Python scripts for reproducibility
-
-Instructions for running the code
-
-Dataset note:
-Download MovieLens 100K from the official source:
-https://grouplens.org/datasets/movielens/
+- Dilrukshi Keerthirathna
+- Kalpana Randeniya
