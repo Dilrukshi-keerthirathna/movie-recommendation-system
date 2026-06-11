@@ -46,7 +46,6 @@ project/
 - Pandas
 - NumPy
 - Scikit-learn
-- Matplotlib
 
 ---
 
