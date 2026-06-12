@@ -43,6 +43,7 @@ project/
 ## Technologies
 
 - Python
+- Google Colab
 - Pandas
 - NumPy
 - Scikit-learn
