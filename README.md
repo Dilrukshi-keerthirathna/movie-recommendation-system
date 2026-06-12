@@ -30,10 +30,10 @@ project/
 │   └── part_4.ipynb
 │
 ├── presentations/
-│   ├── Part_1.ppt
-│   ├── Part_2.ppt
-│   ├── Part_3.ppt
-│   └── Part_4.ppt
+│   ├── Part_1.pptx
+│   ├── Part_2.pptx
+│   ├── Part_3.pptx
+│   └── Part_4.pptx
 │
 └── README.md
 ```
